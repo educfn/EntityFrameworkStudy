@@ -6,14 +6,17 @@ try
 {
     using var connection = new Connection().ObterConexao();
     connection.Open();
-    Console.WriteLine(connection.State);    
+    Console.WriteLine(connection.State);
 }
 catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
 }
 
+Console.ReadKey();
+
 return;
+
 
 Artista ira = new Artista("Ira!", "Banda Ira!");
 Artista beatles = new("The Beatles", "Banda The Beatles");
