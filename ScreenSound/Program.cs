@@ -13,8 +13,6 @@ catch (Exception ex)
     Console.WriteLine(ex.Message);
 }
 
-Console.ReadKey();
-
 return;
 
 
