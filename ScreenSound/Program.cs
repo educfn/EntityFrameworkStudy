@@ -4,8 +4,10 @@ using ScreenSound.Modelos;
 
 try
 {
-    var connection = new Connection();
-    var listaArtistas = connection.Listar();
+    var artistaDAL = new ArtistaDAL();
+    artistaDAL.Adicionar(new Artista("Foo Fighters","Texto test da Bio do Food Fighters"));
+
+    var listaArtistas = artistaDAL.Listar();
 
     foreach (var artista in listaArtistas)
     {
